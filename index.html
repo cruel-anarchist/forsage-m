@@ -4,48 +4,84 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Forsage-M</title>
-  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <link rel="icon" href="assets/img/favicon.ico">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto&display=swap"
+    rel="stylesheet"
+  >
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+
+  <!-- Hero -->
   <header>
-    <h1>Автосервис Форсаж-М</h1>
-    <p>BMW & MINI</p>
+    <div class="header-content">
+      <h1>Профессиональный сервис BMW & MINI в Москве</h1>
+      <p>Оригинальные запчасти • Гарантия • Быстрый ремонт</p>
+      <a href="#contacts" class="btn-primary">Записаться онлайн</a>
+    </div>
   </header>
 
-  <div class="slider">
-    <div class="slide active"><img src="assets/img/slide1.jpg" alt="Слайд 1"></div>
-  </div>
-
   <main>
+    <!-- О компании -->
     <section>
       <h2>О компании</h2>
       <p>Forsage-M — профессиональный сервис для владельцев BMW и MINI в Москве. Мы используем только оригинальные запчасти и работаем строго по регламенту.</p>
     </section>
 
+    <!-- Услуги -->
     <section>
       <h2>Услуги</h2>
-      <ul>
-        <li>Диагностика и ТО</li>
-        <li>Ремонт ходовой и двигателя</li>
-        <li>Замена масла и фильтров</li>
-        <li>Кузовной ремонт</li>
-      </ul>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="assets/img/icon-diagnostics.svg" alt="Диагностика">
+          <h3>Диагностика и ТО</h3>
+          <p>Полная проверка всех систем BMW и MINI.</p>
+        </div>
+        <div class="service-card">
+          <img src="assets/img/icon-engine.svg" alt="Ремонт">
+          <h3>Ремонт ходовой и двигателя</h3>
+          <p>Качественный ремонт с применением оригинальных деталей.</p>
+        </div>
+        <div class="service-card">
+          <img src="assets/img/icon-oil.svg" alt="Замена масла">
+          <h3>Замена масла и фильтров</h3>
+          <p>Быстро и аккуратно, с проверкой всех систем.</p>
+        </div>
+        <div class="service-card">
+          <img src="assets/img/icon-body.svg" alt="Кузовной">
+          <h3>Кузовной ремонт</h3>
+          <p>Восстановление и покраска кузова на профессиональном уровне.</p>
+        </div>
+      </div>
     </section>
 
+    <!-- Цены -->
     <section>
       <h2>Цены на популярные услуги</h2>
-      <ul>
-        <li>Замена масла: от 2 500 ₽</li>
-        <li>Диагностика: от 1 500 ₽</li>
-        <li>Ремонт тормозов: от 3 000 ₽</li>
-      </ul>
+      <div class="price-cards">
+        <div class="price-card">
+          <h4>Замена масла</h4>
+          <p class="price">от 2 500 ₽</p>
+        </div>
+        <div class="price-card">
+          <h4>Диагностика</h4>
+          <p class="price">от 1 500 ₽</p>
+        </div>
+        <div class="price-card">
+          <h4>Ремонт тормозов</h4>
+          <p class="price">от 3 000 ₽</p>
+        </div>
+      </div>
     </section>
 
-    <section>
+    <!-- Контакты -->
+    <section id="contacts">
       <h2>Контакты</h2>
-      <p><a href="mailto:welcome@forsage-m.ru">welcome@forsage-m.ru</a></p>
-    <div style="display: flex; gap: 20px; align-items: center;">
+      <p class="contact-info">
+        <a href="mailto:welcome@forsage-m.ru">welcome@forsage-m.ru</a>
+      </p>
+      <div class="social-links">
       <!-- VK -->
       <a href="https://vk.com/forsage_m" target="_blank" style="width: 50px; height: 50px;">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100%" height="100%">
@@ -76,6 +112,7 @@
       </a>
     </div>
     <form
+      class="contact-form"
       action="https://formspree.io/f/movlqvbn"
       method="POST">
       <input type="hidden" name="_subject" value="Заявка с сайта Forsage-M">
@@ -85,11 +122,13 @@
       <input type="email" name="email" placeholder="E-Mail" required>
       <textarea name="message" placeholder="Сообщение" required></textarea>
       <button type="submit">Отправить</button>
-    </form>
+      </form>
     </section>
   </main>
 
   <footer>&copy; Forsage-M, 2025</footer>
+
   <script src="assets/js/slider.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
