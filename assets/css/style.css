@@ -201,15 +201,23 @@ footer {
   margin: 1.5rem 0;
 }
 
-/* Центрирование карты */
-.map-container {
-  text-align: center;
-  margin: 1.5rem 0;
+/* Центрирование карты и соседнего текста */
+#map {
+  /* можно задать отступы сверху/снизу по вкусу */
+  padding: 1.5rem 0;
 }
 
-/* Адаптивность iframe */
+.map-container {
+  display: flex;
+  flex-direction: column; /* позволяет сначала заголовку быть над картой */
+  align-items: center;    /* центрируем всё по горизонтали */
+  justify-content: center;/* центрируем по вертикали при необходимости */
+}
+
 .map-container iframe {
-  max-width: 100%;
-  height: auto;
+  display: block;
+  width: 100%;         /* карта растягивается на всю ширину контейнера */
+  max-width: 640px;    /* оригинальная ширина */
+  height: auto;        /* сохраняет пропорции */
   border: 0;
 }
