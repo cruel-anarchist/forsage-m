@@ -200,3 +200,16 @@ footer {
   text-align: center;
   margin: 1.5rem 0;
 }
+
+/* Центрирование карты */
+.map-container {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+/* Адаптивность iframe */
+.map-container iframe {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
