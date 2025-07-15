@@ -195,3 +195,8 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+
+.rating-badge {
+  text-align: center;
+  margin: 1.5rem 0;
+}
