@@ -1,64 +1,51 @@
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f7f7f7;
-    color: #333;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #111;
 }
 header {
-    background-color: #000;
-    color: white;
-    text-align: center;
-    padding: 20px 10px;
-}
-header h1 {
-    margin: 0;
-    font-size: 2.2em;
-}
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-nav li {
-    margin: 0 15px;
-}
-nav a {
-    color: white;
-    text-decoration: none;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
 main {
-    padding: 20px;
-    max-width: 960px;
-    margin: auto;
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 0 20px;
 }
-section {
-    margin-bottom: 40px;
+h2 {
+  margin-top: 40px;
 }
 footer {
-    background-color: #000;
-    color: white;
-    text-align: center;
-    padding: 10px;
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
 }
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 500px;
+form input, form textarea, form button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1rem;
 }
-form input, form textarea {
-    padding: 10px;
-    font-size: 1em;
+.slider {
+  position: relative;
+  max-width: 100%;
+  height: 300px;
+  overflow: hidden;
 }
-form button {
-    background-color: #000;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    border: none;
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.slide.active {
+  opacity: 1;
 }

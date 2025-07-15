@@ -1,63 +1,61 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forsage-M</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forsage-M</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-    <header>
-        <h1>Forsage-M</h1>
-        <p>Монобрендовый автосервис BMW & MINI</p>
-        <nav>
-            <ul>
-                <li><a href="#about">О компании</a></li>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#prices">Цены</a></li>
-                <li><a href="#contacts">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="about">
-            <h2>О компании</h2>
-            <p>Forsage-M — профессиональный сервис для владельцев BMW и MINI в Москве. Мы используем только оригинальные запчасти и работаем строго по регламенту.</p>
-        </section>
-        <section id="services">
-            <h2>Услуги</h2>
-            <ul>
-                <li>Диагностика и ТО</li>
-                <li>Ремонт ходовой и двигателя</li>
-                <li>Замена масла и фильтров</li>
-                <li>Кузовной ремонт</li>
-            </ul>
-        </section>
-        <section id="prices">
-            <h2>Цены на популярные услуги</h2>
-            <ul>
-                <li>Замена масла: от 2 500 ₽</li>
-                <li>Диагностика: от 1 500 ₽</li>
-                <li>Ремонт тормозов: от 3 000 ₽</li>
-            </ul>
-        </section>
-        <section id="contacts">
-            <h2>Контакты</h2>
-            <p>Email: <a href="mailto:welcome@forsage-m.ru">welcome@forsage-m.ru</a></p>
-            <p>Telegram: <a href="https://t.me/sto_forsage_m">Telegram</a></p> 
-            <p>WhatsApp: <a href="https://wa.me/79857276652">WhatsApp</a></p>
-            <p>VK: <a href="https://vk.com/forsage_m">VK</a></p>
-            <form action="https://formspree.io/f/moqgzdkv" method="POST">
-                <input type="text" name="name" placeholder="Ваше имя" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <textarea name="message" placeholder="Сообщение" required></textarea>
-                <button type="submit">Отправить</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; Forsage-M, 2025</p>
-    </footer>
-    <script src="assets/js/main.js"></script>
+  <header>
+    <h1>Forsage-M</h1>
+    <p>Монобрендовый автосервис BMW & MINI</p>
+  </header>
+
+  <div class="slider">
+    <img src="assets/img/slide1.jpg" class="slide active" />
+    <img src="assets/img/slide2.jpg" class="slide" />
+    <img src="assets/img/slide3.jpg" class="slide" />
+  </div>
+
+  <main>
+    <section>
+      <h2>О компании</h2>
+      <p>Forsage-M — профессиональный сервис для владельцев BMW и MINI в Москве. Мы используем только оригинальные запчасти и работаем строго по регламенту.</p>
+    </section>
+
+    <section>
+      <h2>Услуги</h2>
+      <ul>
+        <li>Диагностика и ТО</li>
+        <li>Ремонт ходовой и двигателя</li>
+        <li>Замена масла и фильтров</li>
+        <li>Кузовной ремонт</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Цены на популярные услуги</h2>
+      <ul>
+        <li>Замена масла: от 2 500 ₽</li>
+        <li>Диагностика: от 1 500 ₽</li>
+        <li>Ремонт тормозов: от 3 000 ₽</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Контакты</h2>
+      <p>Email: <a href="mailto:welcome@forsage-m.ru">welcome@forsage-m.ru</a></p>
+      <form>
+        <input type="text" placeholder="Ваше имя" />
+        <input type="email" placeholder="Email" />
+        <textarea placeholder="Сообщение"></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>&copy; Forsage-M, 2025</footer>
+  <script src="assets/js/slider.js"></script>
 </body>
 </html>
