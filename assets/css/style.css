@@ -247,16 +247,22 @@ h2 {
   padding: 1.5rem 0;
   text-align: center; /* центрируем содержимое секции */
 }
+
 .map-container {
-  width: 640px;       /* фиксированная ширина карты */
-  height: 480px;      /* фиксированная высота карты */
-  margin: 0 auto;     /* центрирование контейнера */
+  position: relative;
+  width: 100%;
+  max-width: 640px;      /* не шире 640px */
+  margin: 1.5rem auto;   /* автопроцент и отступ */
+  padding-top: 75%;      /* 480/640 = 0.75 => 75% от ширины для высоты */
 }
+
 .map-container iframe {
-  width: 100% !important; /* карта займёт весь контейнер */
-  height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border: 0;
-  display: block;
 }
 
 /* Сетка для «О компании» и «Контакты» */
