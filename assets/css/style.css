@@ -1,3 +1,6 @@
+/* ====================
+   Основные переменные и сброс стилей
+   ==================== */
 :root {
   --color-primary: #003366;
   --color-accent: #cc0000;
@@ -19,6 +22,9 @@ body {
   line-height: 1.6;
 }
 
+/* ====================
+   Шапка / Hero-блок
+   ==================== */
 header {
   position: relative;
   width: 100%;
@@ -64,11 +70,40 @@ header::after {
   font-weight: bold;
   transition: transform .2s, box-shadow .2s;
 }
+
 .btn-primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
+/* ====================
+   Медиа-запрос для адаптивного Hero на смартфонах
+   ==================== */
+@media (max-width: 768px) {
+  header {
+    /* Убираем фиксированную высоту, чтобы контент не перекрывался */
+    height: auto;
+    padding: 2rem 1rem;
+  }
+  .header-content h1 {
+    /* Уменьшаем размер заголовка на мобильных */
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+  .header-content p {
+    /* Уменьшаем размер подзаголовка */
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .btn-primary {
+    /* Корректируем размер кнопки */
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+/* ====================
+   Основной контент
+   ==================== */
 main {
   max-width: 960px;
   margin: -4rem auto 2rem;
@@ -87,7 +122,9 @@ h2 {
   text-align: center;
 }
 
-/* Услуги */
+/* ====================
+   Услуги
+   ==================== */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
@@ -109,7 +146,9 @@ h2 {
   margin-bottom: 1rem;
 }
 
-/* Цены */
+/* ====================
+   Цены
+   ==================== */
 .price-cards {
   display: flex;
   flex-wrap: wrap;
@@ -137,7 +176,9 @@ h2 {
   color: var(--color-accent);
 }
 
-/* Контакты */
+/* ====================
+   Контакты
+   ==================== */
 .contact-info {
   text-align: center;
   margin-bottom: 1.5rem;
@@ -154,7 +195,9 @@ h2 {
   display: block;
 }
 
-/* Форма */
+/* ====================
+   Форма
+   ==================== */
 .contact-form {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
@@ -188,33 +231,29 @@ h2 {
   background: #b30000;
 }
 
-/* Footer */
-footer {
-  background: #000;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-}
-
+/* ====================
+   Рейтинг Яндекса
+   ==================== */
 .rating-badge {
   text-align: center;
   margin: 1.5rem 0;
 }
 
-/* Центрирование и масштаб карты */
+/* ====================
+   Карта
+   ==================== */
 #map {
   padding: 1.5rem 0;
-  text-align: center;
+  text-align: center; /* центрируем содержимое секции */
 }
-
 .map-container {
-  width: 100%;           /* контейнер на всю ширину родителя */
-  max-width: 800px;      /* желаемый максимум — подберите по вкусу */
-  margin: 0 auto;        /* центрируем */
+  width: 640px;       /* фиксированная ширина карты */
+  height: 480px;      /* фиксированная высота карты */
+  margin: 0 auto;     /* центрирование контейнера */
 }
-
 .map-container iframe {
-  width: 100%;           /* займёт всю ширину контейнера */
-  height: 480px;         /* фиксированная высота, как передавалось в атрибуте */
+  width: 100% !important; /* карта займёт весь контейнер */
+  height: 100% !important;
   border: 0;
+  display: block;
 }
