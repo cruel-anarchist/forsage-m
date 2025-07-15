@@ -72,7 +72,22 @@
         </div>
       </div>
     </section>
-
+    <!-- Записаться -->
+    <section id="reserve">
+      <h2>Записаться онлайн</h2>
+      <form
+          class="contact-form"
+          action="https://formspree.io/f/movlqvbn"
+          method="POST">
+          <input type="hidden" name="_subject" value="Заявка с сайта Forsage-M">
+          <input type="text" name="full_name" placeholder="Ваше имя" required>
+          <input type="text" name="license_plate" placeholder="Госномер" required>
+          <input type="text" name="vin" placeholder="VIN" required>
+          <input type="text" name="contact" placeholder="E-mail или номер телефона" required pattern="^((\+7|7|8)?[0-9]{10}|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,})$" title="Введите email или номер телефона">
+          <textarea name="message" placeholder="Сообщение" required></textarea>
+          <button type="submit">Отправить</button>
+      </form>
+    </section> 
     <!-- Контакты -->
     <section id="contacts">
       <h2>Контакты</h2>
@@ -115,22 +130,13 @@
       <iframe src="https://yandex.ru/sprav/widget/rating-badge/169055949140?type=rating" width="150" height="50" frameborder="0"></iframe>
     </div>
     </section>
-
-    <section id="reserve">
-      <h2>Записаться онлайн</h2>
-      <form
-          class="contact-form"
-          action="https://formspree.io/f/movlqvbn"
-          method="POST">
-          <input type="hidden" name="_subject" value="Заявка с сайта Forsage-M">
-          <input type="text" name="full_name" placeholder="Ваше имя" required>
-          <input type="text" name="license_plate" placeholder="Госномер" required>
-          <input type="text" name="vin" placeholder="VIN" required>
-          <input type="text" name="contact" placeholder="E-mail или номер телефона" required pattern="^((\+7|7|8)?[0-9]{10}|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,})$" title="Введите email или номер телефона">
-          <textarea name="message" placeholder="Сообщение" required></textarea>
-          <button type="submit">Отправить</button>
-      </form>
-    </section>  
+      <!-- Карта -->
+    <section id="map">
+      <h2>Наше местоположение</h2>
+      <div class="map-container" style="text-align:center; margin:1.5rem 0;">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3ce73058779d6c9628591d6daaf4cf6992a287d976c6ce82c88180a91e2ac6ee&amp;source=constructor" width="640" height="480" frameborder="0"></iframe>
+      </div>
+    </section> 
   </main>
 
   <footer>&copy; Forsage-M, 2025</footer>
