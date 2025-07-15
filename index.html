@@ -77,32 +77,13 @@
     <form
       action="https://formspree.io/f/movlqvbn"
       method="POST">
-    
-      <label>
-        Ваше имя:
-        <input type="text" name="full_name" required>
-      </label>
-    
-      <label>
-        Госномер:
-        <input type="text" name="license_plate" required>
-      </label>
-    
-      <label>
-        VIN:
-        <input type="text" name="vin" required>
-      </label>
-    
-      <label>
-        E-Mail:
-        <input type="email" name="email" required>
-      </label>
-    
-      <label>
-        Текст сообщения:
-        <textarea name="message" required></textarea>
-      </label>
-    
+      
+      <input type="text" name="full_name" placeholder="Ваше имя" required>
+      <input type="text" name="license_plate" placeholder="Госномер" required>
+      <input type="text" name="vin" placeholder="VIN" required>
+      <input type="email" name="email" placeholder="E-Mail" required>
+      <textarea name="message" placeholder="Текст сообщения" required></textarea>
+      
       <button type="submit">Отправить</button>
     </form>
     </section>
