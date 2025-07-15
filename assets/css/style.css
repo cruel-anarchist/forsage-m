@@ -258,3 +258,18 @@ h2 {
   border: 0;
   display: block;
 }
+
+/* Сетка для «О компании» и «Контакты» */
+.company-contacts-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+/* Убеждаемся, что секции внутри занимают всю свою колонку */
+.company-contacts-wrapper section {
+  background: #fff; /* по желанию: фоновые карточки */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
