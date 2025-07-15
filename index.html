@@ -1,81 +1,61 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forsage-M | Сервис BMW & MINI</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forsage-M</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Forsage-M</h1>
-            <nav>
-                <a href="#about">О компании</a>
-                <a href="#services">Услуги</a>
-                <a href="#prices">Цены</a>
-                <a href="#contact">Контакты</a>
-            </nav>
-        </div>
+        <h1>Forsage-M</h1>
+        <p>Монобрендовый автосервис BMW & MINI</p>
+        <nav>
+            <ul>
+                <li><a href="#about">О компании</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#prices">Цены</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <section class="hero">
-        <div class="container">
-            <h2>Профессиональный сервис BMW & MINI</h2>
-            <p>Только оригинальные запчасти и регламентированный ремонт в Москве</p>
-            <a href="#contact" class="button">Записаться на сервис</a>
-        </div>
-    </section>
-
-    <section id="about" class="content">
-        <div class="container">
+    <main>
+        <section id="about">
             <h2>О компании</h2>
-            <p>Forsage-M — профессиональный сервис для владельцев BMW и MINI. Работаем строго по регламенту производителя, только с оригинальными запчастями.</p>
-        </div>
-    </section>
-
-    <section id="services" class="services">
-        <div class="container">
+            <p>Forsage-M — профессиональный сервис для владельцев BMW и MINI в Москве. Мы используем только оригинальные запчасти и работаем строго по регламенту.</p>
+        </section>
+        <section id="services">
             <h2>Услуги</h2>
-            <div class="cards">
-                <div class="card">Диагностика и ТО</div>
-                <div class="card">Ремонт ходовой и двигателя</div>
-                <div class="card">Замена масла и фильтров</div>
-                <div class="card">Кузовной ремонт</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="prices" class="content">
-        <div class="container">
+            <ul>
+                <li>Диагностика и ТО</li>
+                <li>Ремонт ходовой и двигателя</li>
+                <li>Замена масла и фильтров</li>
+                <li>Кузовной ремонт</li>
+            </ul>
+        </section>
+        <section id="prices">
             <h2>Цены на популярные услуги</h2>
             <ul>
                 <li>Замена масла: от 2 500 ₽</li>
                 <li>Диагностика: от 1 500 ₽</li>
                 <li>Ремонт тормозов: от 3 000 ₽</li>
             </ul>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
+        </section>
+        <section id="contacts">
             <h2>Контакты</h2>
             <p>Email: <a href="mailto:welcome@forsage-m.ru">welcome@forsage-m.ru</a></p>
             <p>Telegram, WhatsApp, VK: <a href="#">связаться</a></p>
-            <form action="https://formspree.io/f/xqkrldpg" method="POST">
-                <input type="text" name="name" placeholder="Имя" required />
-                <input type="email" name="email" placeholder="Email" required />
+            <form action="https://formspree.io/f/moqgzdkv" method="POST">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="email" name="email" placeholder="Email" required>
                 <textarea name="message" placeholder="Сообщение" required></textarea>
                 <button type="submit">Отправить</button>
             </form>
-        </div>
-    </section>
-
+        </section>
+    </main>
     <footer>
-        <div class="container">
-            © Forsage-M, 2025
-        </div>
+        <p>&copy; Forsage-M, 2025</p>
     </footer>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
