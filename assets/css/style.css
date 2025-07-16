@@ -81,20 +81,26 @@ header::after {
    ==================== */
 @media (max-width: 768px) {
   header {
+    /* Заменяем изображение шапки для мобильных */
+    background: url('../img/header-mobile.png') center/cover no-repeat;
+
     /* Убираем фиксированную высоту, чтобы контент не перекрывался */
     height: auto;
     padding: 2rem 1rem;
   }
+
   .header-content h1 {
     /* Уменьшаем размер заголовка на мобильных */
     font-size: 1.75rem;
     line-height: 1.2;
   }
+
   .header-content p {
     /* Уменьшаем размер подзаголовка */
     font-size: 1rem;
     margin-bottom: 1rem;
   }
+
   .btn-primary {
     /* Корректируем размер кнопки */
     padding: 0.6rem 1.2rem;
