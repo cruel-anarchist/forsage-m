@@ -209,6 +209,10 @@ h2 {
 /* ====================
    Форма
    ==================== */
+.center-button {
+  text-align: center;
+  margin-bottom: 1.5rem; /* Отступ снизу, чтобы отделить кнопку от формы */
+}
 .contact-form {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
