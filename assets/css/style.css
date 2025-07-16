@@ -89,6 +89,10 @@ header::after {
     padding: 2rem 1rem;
   }
 
+   .header-content {
+    padding-top: 2rem; /* Добавляем отступ сверху */
+  }
+   
   .header-content h1 {
     /* Уменьшаем размер заголовка на мобильных */
     font-size: 1.75rem;
