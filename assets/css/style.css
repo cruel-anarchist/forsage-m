@@ -304,3 +304,15 @@ h2 {
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
+
+/* ====================
+   Футер
+   ==================== */
+footer {
+  background-color: #000; /* Чёрный фон */
+  color: #fff;            /* Белый текст */
+  text-align: center;     /* Центрирование текста */
+  padding: 1rem 0;        /* Отступ сверху и снизу */
+  font-size: 0.9rem;
+  margin-top: 2rem;       /* Отступ сверху от контента */
+}
