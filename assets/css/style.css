@@ -318,36 +318,51 @@ footer {
 }
 
 /* ====================
-   Чат-бот Forsage-M
+   Чат-бот: кнопка и окно
    ==================== */
 #chatbot-container {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 300px;
   font-family: var(--font-body);
   z-index: 9999;
+}
+
+#chat-toggle {
+  background: var(--color-primary);
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: background 0.2s;
+}
+
+#chat-toggle:hover {
+  background: #004080;
+}
+
+#chat-body {
+  display: none;
+  width: 300px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  overflow: hidden;
+  margin-bottom: 10px;
 }
 
 #chat-header {
   background: var(--color-primary);
   color: #fff;
   padding: 10px;
-  cursor: pointer;
-  border-radius: 8px 8px 0 0;
   font-weight: bold;
   text-align: center;
-}
-
-#chat-body {
-  display: none;
-  background: #fff;
-  border: 1px solid #ccc;
-  border-top: none;
-  max-height: 420px;
-  overflow: hidden;
-  border-radius: 0 0 8px 8px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 #chat-messages {
@@ -355,10 +370,6 @@ footer {
   height: 180px;
   overflow-y: auto;
   font-size: 0.9rem;
-}
-
-#chat-messages p {
-  margin: 0.5em 0;
 }
 
 #chat-buttons {
