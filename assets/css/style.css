@@ -403,3 +403,20 @@ footer {
   outline: none;
   font-size: 0.9rem;
 }
+
+.chat-link-button {
+  display: inline-block;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.chat-link-button:hover {
+  background: #004080;
+}
