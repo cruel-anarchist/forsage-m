@@ -52,7 +52,8 @@ function getResponse(msg) {
   }
   return `
     Извините, я не понимаю. Напишите нам на
-    <a href="mailto:welcome@forsage-m.ru">welcome@forsage-m.ru</a><br><br>
+    <a href="mailto:welcome@forsage-m.ru">welcome@forsage-m.ru</a><br>
+    Вы так же можете<br>
     <a href="https://yandex.ru/business/widget/request/company/169055949140"
        target="_blank" class="chat-link-button">
       Записаться на консультацию
