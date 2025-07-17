@@ -151,6 +151,21 @@
     </section> 
   </main>
 
+  <!-- Chat Widget -->
+  <div id="chatbot-container">
+    <div id="chat-header" onclick="toggleChat()">Чат с Forsage-M</div>
+    <div id="chat-body">
+      <div id="chat-messages"></div>
+      <div id="chat-buttons"></div>
+      <input
+        type="text"
+        id="user-input"
+        placeholder="Задайте вопрос..."
+        onkeydown="handleInput(event)"
+      />
+    </div>
+  </div>
+  
   <footer>&copy; Forsage-M, 2013-2025</footer>
 
   <script src="assets/js/slider.js"></script>
