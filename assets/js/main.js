@@ -1,3 +1,9 @@
+// Переключение видимости чата
+document.getElementById("chat-toggle").addEventListener("click", () => {
+  const chatBody = document.getElementById("chat-body");
+  chatBody.style.display = chatBody.style.display === "none" || chatBody.style.display === "" ? "block" : "none";
+});
+
 const faq = {
   "где вы находитесь": "Мы находимся в Москве, ул. Ленина, 47, стр. 2.",
   "какие марки обслуживаете": "Мы специализируемся на BMW и MINI.",
